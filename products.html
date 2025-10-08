@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products — Mirha Chemical Industry</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(135deg, #0d223d, #1e5128);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .product-section {
+      max-width: 1200px;
+      margin: 100px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .product-section h2 {
+      font-size: 2.5em;
+      color: #6abd45;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 20px;
+      transition: 0.4s;
+      backdrop-filter: blur(6px);
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(106, 189, 69, 0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 15px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      color: #6abd45;
+      margin: 15px 0 10px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #dcdcdc;
+    }
+
+    .buy-btn {
+      margin-top: 15px;
+      background: linear-gradient(90deg, #6abd45, #4a9f30);
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .buy-btn:hover {
+      background: white;
+      color: #0d223d;
+      box-shadow: 0 0 15px #6abd45;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #6abd45;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="product-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://i.ibb.co/VH5shKd/chemical1.jpg" alt="Chemical 1">
+        <h3>Nickel Sulphate</h3>
+        <p>High-purity chemical for electroplating applications.</p>
+        <a href="https://wa.me/923702723400?text=Hi!%20I%20want%20to%20buy%20Nickel%20Sulphate.">
+          <button class="buy-btn">Contact to Buy</button>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.ibb.co/ykxRhxS/chemical2.jpg" alt="Chemical 2">
+        <h3>Copper Cyanide</h3>
+        <p>Essential for metal finishing and industrial processes.</p>
+        <a href="https://wa.me/923702723400?text=Hi!%20I%20want%20to%20buy%20Copper%20Cyanide.">
+          <button class="buy-btn">Contact to Buy</button>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.ibb.co/kMC6rhQ/chemical3.jpg" alt="Chemical 3">
+        <h3>Zinc Chloride</h3>
+        <p>Used in galvanizing and other plating operations.</p>
+        <a href="https://wa.me/923702723400?text=Hi!%20I%20want%20to%20buy%20Zinc%20Chloride.">
+          <button class="buy-btn">Contact to Buy</button>
+        </a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.ibb.co/qBzm0SW/chemical4.jpg" alt="Chemical 4">
+        <h3>Potassium Cyanide</h3>
+        <p>Specialized compound for professional electroplating.</p>
+        <a href="https://wa.me/923702723400?text=Hi!%20I%20want%20to%20buy%20Potassium%20Cyanide.">
+          <button class="buy-btn">Contact to Buy</button>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
